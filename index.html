@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="file.css">
+</head>
+<body>
+    <div class="container">
+        <form action="" id="survey-form">
+            <div class="form-input">
+                <label id="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name"  class='form-input-size' required >
+            </div>
+            <div class="form-input">
+                <label id="label-email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email"  class='form-input-size' required >
+            </div>
+            <div class='form-input'>
+                <label id='number-label'>Age
+                    <span>(optional)</span>
+                </label>
+                <input type='number' id='number' placeholder='25' min='0' max='80' class='form-input-size' />
+            </div>
+            <div class='form-input'>
+                <p>Which option best describes your current role?</p>
+                <select id='dropdown' class='form-input-size' required>
+                    <option disabled selected value>Select current role</option>
+                    <option value='Student'>Student</option>
+                    <option value='Senior Software Engineer'>Senior Software Engineer</option>
+                    <option value='Junior Software Engineer'>Junior Software Engineer</option>
+                    <option value='Full Stack Web Developer'>Full Stack Web Developer</option>
+                    <option value='Front-end Web Developer'>Front-end Web Developer</option>
+                    <option value='Back-end Web Developer'>Back-end Web Developer</option>
+                    <option value='Prefer not to say'>Prefer not to answer</option>
+                    <option value='Other'>Other</option>
+                </select>
+            </div>
+            
+            <div class="form-input">
+                <p>Would you recommend Web Development career to a friend or family?</p>
+                <input type="radio"  name="answer" id="radio-btn" value="Definately"/>Definately<br>
+                <input type='radio' name='answer' id='radio-btn' value='Maybe' />Maybe </br>
+                <input type='radio' name='answer' id='radio-btn' value='Not sure' />Not sure </br>
+ 
+            </div>
+            <div class="form-input">
+                <p>What are your favourable Technology Languages and Frameworks ?</p>
+                <label><input type='checkbox' id='check-box' value='Ruby on Rails'>Ruby on Rails</label>
+                <label><input type='checkbox' id='check-box' value='JavaScript'>JavaScript</label>
+                <label><input type='checkbox' id='check-box' value='React'>React</label>
+                <label><input type='checkbox' id='check-box' value='Python'>Python</label>
+                <label><input type='checkbox' id='check-box' value='Java'>Java</label>
+                <label><input type='checkbox' id='check-box' value='PHP'>PHP</label>
+                <label><input type='checkbox' id='check-box' value='Angular'>Angular</label>
+                <label><input type='checkbox' id='check-box' value='Vue'>Vue</label>
+                <label><input type='checkbox' id='check-box' value='Swift'>Swift</label>
+                <label><input type='checkbox' id='check-box' value='HTML'>HTML</label>
+                <label><input type='checkbox' id='check-box' value='CSS'>CSS</label>
+                <label><input type='checkbox' id='check-box' value='Other'>Other</label>     
+            </div>
+            <div class='form-input'>
+                <p>Any comments or suggestions to a new Web Developers?</p>
+                <textarea type='text' placeholder='Enter your comment here...'></textarea>
+            </div>
+ 
+            <div class='form-input'>
+                <button type='submit' id='submit'>Submit</button>
+            </div>
+        </form>
+    </div>
+
+    
+</body>
+</html>
